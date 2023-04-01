@@ -52,4 +52,4 @@ La API utiliza dos controladores para manejar las peticiones a las diferentes ru
 
 * ControllerClient: Maneja las peticiones relacionadas con usuarios, publicaciones y álbumes.
 * ControllerRegister: Maneja las operaciones CRUD en registros.
-<img width="450" src="https://firebasestorage.googleapis.com/v0/b/imagenes-1ccc1.appspot.com/o/flujoBackend.png?alt=media&token=c4800818-740c-421c-be59-39e74c48e766" />
+<img width="450" align="center" src="https://firebasestorage.googleapis.com/v0/b/imagenes-1ccc1.appspot.com/o/DIAGRAMA-DE-FLUJO.png?alt=media&token=0c1c1b29-7a1b-49d2-93e1-631ca72e3e81" />
