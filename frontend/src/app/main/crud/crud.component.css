@@ -1,0 +1,93 @@
+.CRUD {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--white);
+  width: 60rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0px 4px 8px -1px var(--box-shadow);
+  box-shadow: 0px 4px 8px -1px var(--box-shadow);
+  padding: 1rem;
+}
+
+.title__crud {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin: 0.7rem;
+}
+
+.top-crud {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: var(--background);
+  background-color: var(--primary);
+  padding: 0.4rem;
+  margin: 0.3rem;
+}
+
+
+.scrollsito {
+  margin-top: 1rem;
+  height: 20rem;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.scrollsito::-webkit-scrollbar {
+  display: none;
+}
+
+.container-info__crud {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--background);
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.hora {
+  color: var(--secondary2);
+}
+
+.delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.delete i {
+  color: var(--danger);
+}
+
+.delete i:hover {
+  cursor: pointer;
+  color: var(--danger2);
+  transition: all 0.2s ease;
+  font-size: 1.2rem;
+}
+
+.icono {
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+.not-register {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  bottom: 1rem;
+  color: var(--primary);
+}

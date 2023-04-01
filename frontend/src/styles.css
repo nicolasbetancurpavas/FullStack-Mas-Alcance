@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  user-select: none;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.light-mode {
+  --text: rgb(72, 72, 72);
+  --background: rgb(239, 238, 238);
+  --text-l: rgb(236, 236, 236);
+  --primary: #2c6bab;
+  --secondary: rgb(109, 204, 106);
+  --secondary2: rgb(77, 163, 74);
+  --danger: rgb(238, 59, 59);
+  --danger2: rgb(199, 23, 23);
+  --disable: rgb(215, 215, 215);
+  --white: white;
+  --box-shadow: rgba(0, 0, 0, 0.237);
+  --box-shadow2: rgba(0, 0, 0, 0.166);
+}
+
+.dark-mode {
+  --text: rgb(175, 175, 175);
+  --background: rgb(47, 47, 47);
+  --primary: #2c6bab;
+  --secondary: rgb(109, 204, 106);
+  --disable: rgb(68, 68, 68);
+  --white: rgb(74, 74, 74);
+  --box-shadow: rgba(0, 0, 0, 0.657);
+  --box-shadow2: rgba(0, 0, 0, 0.548);
+}
+
+body {
+  height: 100vh;
+}
+
+.app {
+  color: var(--text);
+  display: grid;
+  grid-template-columns: 15rem auto;
+  background-color: var(--background);
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+main {
+  margin-left: 3rem;
+}

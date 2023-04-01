@@ -1,0 +1,51 @@
+<section class="contaianer-consults">
+  <button class="item__consults" (click)="loadData()">
+    <i class="fa-sharp fa-solid fa-user"></i>
+    <h3>Ver usuarios</h3>
+  </button>
+  <div class="item__consults" (click)="dataPost()">
+    <i class="fa-sharp fa-solid fa-paste"></i>
+    <h3>Ver publicaciones</h3>
+  </div>
+  <div class="item__consults-album">
+    <div class="info-album">
+      <i class="fa-sharp fa-solid fa-images"></i>
+      <h3>Ver album Por id</h3>
+    </div>
+    <input class="input-album" placeholder="ingresar id del album" (change)="searchId($event)" />
+    <button class="buscar-id" (click)="search()">Buscar</button>
+  </div>
+  <div class="album">
+
+  </div>
+</section>
+<section class="services">
+  <h2 class="title-servicios">Informacion consultada <i class="fa-solid fa-turn-down"></i></h2>
+  <div class="container-info">
+    <div class="container-aviso" *ngIf="imgOpen">
+      <h1 class="title__aviso">No has generado ninguna consulta, consulta arriba
+        <i class="fa-solid fa-triangle-exclamation"></i>
+      </h1>
+      <img class="img-aviso" src="../../../assets/aviso.png" alt="logo" />
+    </div>
+    <div class="" *ngIf="stateDataUser">
+      <ul class="container-header-table">
+        <li>nombre</li>
+        <li>email</li>
+        <li>phone</li>
+      </ul>
+      <div class="info-scroll" *ngFor="let users of data">
+        <p><i class="fa-solid fa-user"></i>{{users.name}}</p>
+        <p><i class="fa-solid fa-envelope"></i>{{users.email}}</p>
+        <p><i class="fa-solid fa-phone"></i>{{users.phone}}</p>
+      </div>
+    </div>
+    <div class="scroll" *ngIf="stateDataPost">
+      <div class="info-scroll-2" *ngFor="let post of dataP ">
+        <p> <i class="fa-solid fa-id-card"></i> {{post.id}}</p>
+        <p> ID :{{post.userId}}</p>
+        <p> <i class="fa-sharp fa-solid fa-envelopes-bulk"></i> {{post.title}}</p>
+      </div>
+    </div>
+  </div>
+</section>

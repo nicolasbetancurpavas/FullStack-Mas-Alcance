@@ -1,0 +1,22 @@
+<div class="CRUD">
+  <h2 class="title__crud">Administra tus Registros</h2>
+  <div class="container-crud">
+    <div class="top-crud">
+      <p>ID</p>
+      <p>hora</p>
+      <p>Metodo</p>
+    </div>
+  </div>
+  <div class="scrollsito">
+    <h2 class="not-register" *ngIf="data.length === 0">No hay registros ... 👩‍🔧 </h2>
+    <div class="scrolling" *ngFor="let register of data">
+      <div class="container-info__crud">
+        <p>{{register._id}}</p>
+        <p class="hora">{{register.date}}</p>
+        <p class="delete">{{register.method}} <i class="fa-solid fa-trash" (click)="deleteRegisterid(register._id)"></i>
+        </p>
+      </div>
+    </div>
+  </div>
+  <span class="icono"><i class="fa-solid fa-arrows-up-down"></i></span>
+</div>
