@@ -10,8 +10,8 @@
 * ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
 ## Descripción del proyecto
-* La aplicación tiene como objetivo obtener información de una API externa https://jsonplaceholder.typicode.com, en la que se pueden obtener datos de usuarios, publicaciones y álbumes. El backend utiliza NodeJS y ExpressJS para estructurar y exponer los datos a través de una API REST esta api rest consta de :
+* La aplicación tiene como objetivo obtener información de una API externa https://jsonplaceholder.typicode.com, en la que se pueden obtener datos de usuarios, publicaciones y álbumes. El backend utiliza NodeJS y ExpressJS para estructurar y exponer los datos a través de una API REST esta api consta de :
 * consultas para la api externa mostrar publicaciones, mostrar usuario
-* cada consulta genera un registros , estos registros tienes todos los servicios CRUD para la gestion de los mismo
+* cada consulta genera un registros , estos registros tienes todos los servicios CRUD para la gestion de los mismos
 
 * El frontend, construido con Angular y TypeScript, se comunica con el backend a través de servicios con inyección de dependencias para solicitar los recursos del backend y centralizar los servicios en el frontend.
